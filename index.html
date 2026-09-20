@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional 4th-Year OJT (On-the-Job Training) Portfolio for Prince John Bundalan - Aspiring Software Engineer & Full-Stack Web Developer.">
+  <meta name="keywords" content="OJT Portfolio, On-The-Job Training, Prince John Bundalan Portfolio, 4th Year IT Student, Web Developer, Software Engineer Internship">
+  <meta name="author" content="Prince John Bundalan">
+  <title>Prince John Bundalan | 4th-Year OJT &amp; Developer Portfolio</title>
+
+  <!-- Google Fonts: Outfit & Inter for high-impact modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN for modern developer and system icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       STICKY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Portfolio Home">
+        <div class="logo-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>Prince</span>
+        <span class="logo-badge">4th Yr OJT</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ojt">OJT Training</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Resume + Color Switcher + Mobile Toggle) -->
+      <div class="nav-actions">
+        <!-- Live Color Palette Switcher -->
+        <button type="button" class="palette-btn" id="theme-palette-btn" title="Customize Accent Color" aria-label="Choose Accent Color">
+          <i class="fa-solid fa-palette"></i>
+        </button>
+
+        <!-- Color Palette Dropdown Menu -->
+        <div class="color-dropdown" id="color-dropdown">
+          <span class="color-dropdown-title">Choose Accent Color</span>
+          <div class="color-swatches">
+            <button type="button" class="swatch-btn active" data-color="#4361ee" style="background: #4361ee;" title="Indigo (Default)"></button>
+            <button type="button" class="swatch-btn" data-color="#2a9d8f" style="background: #2a9d8f;" title="Teal"></button>
+            <button type="button" class="swatch-btn" data-color="#e63946" style="background: #e63946;" title="Crimson Red"></button>
+            <button type="button" class="swatch-btn" data-color="#10b981" style="background: #10b981;" title="Emerald Green"></button>
+            <button type="button" class="swatch-btn" data-color="#f59e0b" style="background: #f59e0b;" title="Amber"></button>
+            <button type="button" class="swatch-btn" data-color="#8b5cf6" style="background: #8b5cf6;" title="Purple"></button>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary btn-sm btn-resume-nav">
+          <i class="fa-solid fa-paper-plane"></i> Inquire OJT
+        </a>
+
+        <button type="button" class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION: High-Impact Introduction with Photo & OJT Status
+         ========================================================================= -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for OJT / Internship (500 Hours)</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="greeting">Hello World, I'm</span>
+            <span class="highlight-name">Prince John Bundalan</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <i class="fa-solid fa-laptop-code"></i> 4th-Year IT/CS Student &amp; Aspiring Software Engineer
+          </p>
+
+          <p class="hero-description">
+            Passionate graduating student seeking a challenging On-the-Job Training (OJT) position where I can apply my web development, database management, and problem-solving skills to real-world software engineering projects.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#ojt" class="btn btn-primary">
+              <i class="fa-solid fa-briefcase"></i> View OJT Objectives
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <i class="fa-solid fa-diagram-project"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Quick Highlight Metrics -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>4<span>th</span></h3>
+              <p>Year Standing</p>
+            </div>
+            <div class="stat-item">
+              <h3>500<span>h</span></h3>
+              <p>Target OJT Hours</p>
+            </div>
+            <div class="stat-item">
+              <h3>10<span>+</span></h3>
+              <p>Academic &amp; Dev Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Photo of Prince with Floating Badges -->
+        <div class="hero-visual">
+          <!-- Floating Badge Top Left -->
+          <div class="floating-badge badge-top-left">
+            <i class="fa-brands fa-html5"></i>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">Full Stack</div>
+              <div>Web Developer</div>
+            </div>
+          </div>
+
+          <!-- Avatar Frame with uploaded photo -->
+          <div class="avatar-wrapper">
+            <img src="assets/profile.png" alt="Prince - 4th-Year OJT Candidate" class="avatar-img" id="hero-profile-img">
+          </div>
+
+          <!-- Floating Badge Bottom Right -->
+          <div class="floating-badge badge-bottom-right">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">Candidate</div>
+              <div>BSIT / BSCS 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ABOUT ME SECTION
+         ========================================================================= -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-user"></i> Professional Background</div>
+          <h2 class="section-title">Driven by <span>Curiosity &amp; Code</span></h2>
+          <p class="section-subtitle">
+            A proactive 4th-year student ready to bridge university theoretical knowledge with corporate industry standards.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+          <div class="ojt-card">
+            <div class="ojt-card-header">
+              <div class="ojt-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <h3>Career Aspirations</h3>
+            </div>
+            <div class="ojt-card-body">
+              <p>
+                My objective is to become an adaptable, collaborative Software Engineer. I specialize in building responsive front-end interfaces and secure back-end RESTful APIs with clean, maintainable architecture.
+              </p>
+            </div>
+          </div>
+
+          <div class="ojt-card">
+            <div class="ojt-card-header">
+              <div class="ojt-card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <h3>Work Ethic &amp; Mindset</h3>
+            </div>
+            <div class="ojt-card-body">
+              <p>
+                Equipped with quick adaptability to fast-paced tech stacks, disciplined Git version control habits, eager willingness to receive mentorship, and enthusiasm to tackle challenging engineering tickets.
+              </p>
+            </div>
+          </div>
+
+          <div class="ojt-card">
+            <div class="ojt-card-header">
+              <div class="ojt-card-icon"><i class="fa-solid fa-handshake"></i></div>
+              <h3>Industry Readiness</h3>
+            </div>
+            <div class="ojt-card-body">
+              <p>
+                Fully cleared with university endorsement, medical certificate, and flexible availability (On-site, Hybrid, or Remote setups) to satisfy the required 500-hour practicum training program.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         OJT (ON-THE-JOB TRAINING) HUB SECTION
+         ========================================================================= -->
+    <section id="ojt" class="ojt-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-business-time"></i> Internship Practicum</div>
+          <h2 class="section-title">On-The-Job <span>Training Hub</span></h2>
+          <p class="section-subtitle">
+            Comprehensive overview of my internship requirements, learning objectives, and documentation readiness.
+          </p>
+        </div>
+
+        <!-- 2 Column Layout: Target Tracker & Document Status -->
+        <div class="ojt-grid">
+          <!-- OJT Hours Tracker Card -->
+          <div class="ojt-card">
+            <div class="ojt-card-header">
+              <div class="ojt-card-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h3>Practicum Hour Progress</h3>
+                <span style="font-size: 0.84rem; color: var(--text-dim);">Required by University Curriculum</span>
+              </div>
+            </div>
+
+            <div class="ojt-card-body">
+              <p>
+                Committed to rendering regular 8-hour daily shifts (Monday to Friday) to achieve total required practicum hours on schedule.
+              </p>
+
+              <div class="hour-tracker-container">
+                <div class="tracker-meta">
+                  <span>Current Logged Hours: <strong id="logged-hours-text">0 hrs</strong></span>
+                  <span class="hours-target">Target: 500 hrs</span>
+                </div>
+                <div class="progress-bar-track">
+                  <div class="progress-bar-fill" id="progress-bar-fill" style="width: 5%;"></div>
+                </div>
+                <div class="tracker-foot">
+                  <span>Status: Ready to start immediately</span>
+                  <span>Estimated: 10 - 12 Weeks</span>
+                </div>
+              </div>
+
+              <div style="font-size: 0.88rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+                <span>Can render overtime or flexible shift schedules as requested by partner employer.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- OJT Documentation & Requirements Checklist -->
+          <div class="ojt-card">
+            <div class="ojt-card-header">
+              <div class="ojt-card-icon"><i class="fa-solid fa-file-signature"></i></div>
+              <div>
+                <h3>OJT Requirements &amp; Checklist</h3>
+                <span style="font-size: 0.84rem; color: var(--text-dim);">Pre-Deployment Documents</span>
+              </div>
+            </div>
+
+            <div class="ojt-card-body">
+              <div class="ojt-checklist">
+                <div class="checklist-item">
+                  <span class="doc-name"><i class="fa-regular fa-file-lines"></i> University Endorsement Letter</span>
+                  <span class="doc-status ready"><i class="fa-solid fa-check"></i> Ready</span>
+                </div>
+                <div class="checklist-item">
+                  <span class="doc-name"><i class="fa-regular fa-id-badge"></i> Resume &amp; Curriculum Vitae</span>
+                  <span class="doc-status ready"><i class="fa-solid fa-check"></i> Updated</span>
+                </div>
+                <div class="checklist-item">
+                  <span class="doc-name"><i class="fa-solid fa-heart-pulse"></i> Medical Clearance &amp; Fit-to-Work</span>
+                  <span class="doc-status ready"><i class="fa-solid fa-check"></i> Cleared</span>
+                </div>
+                <div class="checklist-item">
+                  <span class="doc-name"><i class="fa-solid fa-handshake-angle"></i> Memorandum of Agreement (MOA)</span>
+                  <span class="doc-status pending"><i class="fa-solid fa-hourglass-half"></i> For Employer Signing</span>
+                </div>
+                <div class="checklist-item">
+                  <span class="doc-name"><i class="fa-solid fa-calendar-check"></i> Daily Time Record (DTR) &amp; Journal</span>
+                  <span class="doc-status ready"><i class="fa-solid fa-check"></i> Prepared</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Key Target Competencies Strip -->
+        <h3 style="margin-bottom: 20px; font-size: 1.3rem; text-align: center;">Target Competencies for Internship</h3>
+        <div class="competencies-strip">
+          <div class="comp-box">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h4>Full-Stack Development</h4>
+            <p>Developing responsive frontend layouts and modular backend services.</p>
+          </div>
+          <div class="comp-box">
+            <i class="fa-solid fa-database"></i>
+            <h4>Database Systems</h4>
+            <p>Designing SQL schemas, query optimization, and data security.</p>
+          </div>
+          <div class="comp-box">
+            <i class="fa-solid fa-bug-slash"></i>
+            <h4>Testing &amp; QA</h4>
+            <p>Debugging issues, unit testing, cross-browser compatibility checks.</p>
+          </div>
+          <div class="comp-box">
+            <i class="fa-solid fa-users-gear"></i>
+            <h4>Agile Teamwork</h4>
+            <p>Active participation in standups, code reviews, and Git workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SKILLS GRID SECTION
+         ========================================================================= -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Technical Stack</div>
+          <h2 class="section-title">Skills &amp; <span>Proficiencies</span></h2>
+          <p class="section-subtitle">
+            Technologies, frameworks, and productivity tools practiced through academic coursework and real projects.
+          </p>
+        </div>
+
+        <div class="skills-categories">
+          <!-- Category 1: Frontend Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-brands fa-html5"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5" style="color:#e34f26;"></i> HTML5 &amp; Semantic Web</span>
+                  <span class="skill-level-text">92%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-css3-alt" style="color:#264de4;"></i> CSS3, Flexbox &amp; Grid</span>
+                  <span class="skill-level-text">90%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js" style="color:#f7df1e;"></i> JavaScript (ES6+)</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-bootstrap" style="color:#7952b3;"></i> Bootstrap / Responsive UI</span>
+                  <span class="skill-level-text">88%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Responsive Design</span>
+              <span class="tech-tag">DOM Manipulation</span>
+              <span class="tech-tag">Async / Fetch API</span>
+              <span class="tech-tag">UI/UX Basics</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-server"></i>
+              <h3>Backend &amp; Database</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-php" style="color:#777bb4;"></i> PHP / OOP Basics</span>
+                  <span class="skill-level-text">82%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-node-js" style="color:#339933;"></i> Node.js &amp; Express</span>
+                  <span class="skill-level-text">78%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 78%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-database" style="color:#00758f;"></i> MySQL &amp; Relational DB</span>
+                  <span class="skill-level-text">86%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-network-wired" style="color:#06d6a0;"></i> RESTful APIs &amp; JSON</span>
+                  <span class="skill-level-text">84%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tech-tag">CRUD Operations</span>
+              <span class="tech-tag">Authentication (JWT / Session)</span>
+              <span class="tech-tag">SQL Joins &amp; Indexing</span>
+              <span class="tech-tag">MVC Architecture</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools & Professional Habits -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-toolbox"></i>
+              <h3>Tools &amp; Workflow</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt" style="color:#f05032;"></i> Git &amp; GitHub Version Control</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-terminal" style="color:#38bdf8;"></i> VS Code &amp; DevTools</span>
+                  <span class="skill-level-text">90%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-route" style="color:#ff6c37;"></i> Postman API Testing</span>
+                  <span class="skill-level-text">80%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-people-group" style="color:#10b981;"></i> Problem Solving &amp; Teamwork</span>
+                  <span class="skill-level-text">95%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Command Line</span>
+              <span class="tech-tag">Code Documentation</span>
+              <span class="tech-tag">Agile / Scrum Basics</span>
+              <span class="tech-tag">Troubleshooting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PROJECT CARDS SECTION
+         ========================================================================= -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Showcase</div>
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+          <p class="section-subtitle">
+            Selected academic capstone, course outputs, and web applications created to demonstrate practical engineering capabilities.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="capstone">Capstone &amp; Academic</button>
+          <button type="button" class="filter-btn" data-filter="web">Web Systems</button>
+          <button type="button" class="filter-btn" data-filter="ui">UI &amp; Utility</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: OJT Management System -->
+          <article class="project-card" data-category="capstone web">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/ojt_tracker.svg" alt="Student Internship & OJT Monitoring System">
+              <span class="project-badge">Capstone / System</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Student OJT &amp; Practicum Monitoring Portal</h3>
+              <p class="project-desc">
+                A centralized university web application designed to track student practicum hours, daily time records (DTR), supervisor evaluation sheets, and weekly narrative reports.
+              </p>
+              <ul class="project-highlights">
+                <li>Automated daily clock-in/out hour calculation algorithm.</li>
+                <li>Role-based access control for Students, OJT Coordinators, and Company Mentors.</li>
+                <li>PDF generation for completed attendance and evaluation certificates.</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> View Repo</a>
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Inventory & Point of Sale System -->
+          <article class="project-card" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/pos_inventory.svg" alt="Inventory and POS System">
+              <span class="project-badge">Business Web App</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart POS &amp; Inventory Analytics System</h3>
+              <p class="project-desc">
+                Full-featured sales and stock management system with real-time barcode scanning simulation, low-inventory notifications, and graphical revenue reporting.
+              </p>
+              <ul class="project-highlights">
+                <li>Dynamic product categorization with batch stock adjustments.</li>
+                <li>Instant receipt generation and sales summary calculations.</li>
+                <li>Visual trend charts for best-selling items and seasonal forecasts.</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript (ES6)</span>
+                <span class="tech-tag">CSS Grid / Flexbox</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> View Repo</a>
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Smart Campus Registrar Queuing -->
+          <article class="project-card" data-category="capstone ui">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/campus_queuing.svg" alt="Campus Queuing System">
+              <span class="project-badge">Academic Project</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Campus Smart Queuing &amp; Ticketing Web App</h3>
+              <p class="project-desc">
+                An interactive ticketing system created to eliminate physical lines at the university registrar and student cashier counters during peak enrollment periods.
+              </p>
+              <ul class="project-highlights">
+                <li>Real-time ticket display screen with sound and screen prompts.</li>
+                <li>Mobile-friendly digital queue ticket tracker for waiting students.</li>
+                <li>Counter performance metrics and average wait time insights.</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">Modern CSS3</span>
+                <span class="tech-tag">WebSockets / Polling</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> View Repo</a>
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Clinic Health Records Portal -->
+          <article class="project-card" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/health_records.svg" alt="Health Records Portal">
+              <span class="project-badge">Database System</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">University Clinic &amp; Medical Clearance Portal</h3>
+              <p class="project-desc">
+                Digitized medical records management system facilitating pre-OJT physical examinations, diagnostic test uploads, and fit-to-work clearance generation.
+              </p>
+              <ul class="project-highlights">
+                <li>Encrypted patient history records adhering to basic data privacy rules.</li>
+                <li>Doctor consultation scheduling and digital prescription generator.</li>
+                <li>Instant clearance status lookup for academic department heads.</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">PHP / PDO</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> View Repo</a>
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         EDUCATION & TIMELINE SECTION
+         ========================================================================= -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</div>
+          <h2 class="section-title">Education &amp; <span>Milestones</span></h2>
+          <p class="section-subtitle">
+            My educational background, relevant coursework, and continuous professional growth.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1: College 4th Year -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2022 - Present (Expected Graduation: 2026)</span>
+              <h3 class="timeline-role">Bachelor of Science in Information Technology / Computer Science</h3>
+              <div class="timeline-institution"><i class="fa-solid fa-building-columns"></i> College / University Department of Computing Studies</div>
+              <p class="timeline-desc">
+                Currently in 4th Year Standing. Specialized in Software Development, Database Administration, Web Technologies, and Network Security. Actively preparing for OJT deployment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Relevant Coursework & Projects -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Key Academic Coursework</span>
+              <h3 class="timeline-role">Core Technical Subjects Completed</h3>
+              <div class="timeline-institution"><i class="fa-solid fa-book-open"></i> Curriculum Competencies</div>
+              <p class="timeline-desc">
+                Data Structures &amp; Algorithms, Object-Oriented Programming (OOP), Web Systems &amp; Technologies, Database Management Systems (DBMS), Software Engineering &amp; Methodologies, Human-Computer Interaction (HCI).
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Seminars & Certifications -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Seminars &amp; Technical Workshops</span>
+              <h3 class="timeline-role">Industry Readiness &amp; Modern Dev Practices</h3>
+              <div class="timeline-institution"><i class="fa-solid fa-certificate"></i> Academic &amp; Industry Seminars</div>
+              <p class="timeline-desc">
+                Participated in workshops on Git Version Control Best Practices, Introduction to Cloud Computing, Cyber Security Fundamentals, and Agile Project Management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACT & OJT INQUIRIES SECTION
+         ========================================================================= -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-envelope-open-text"></i> Let's Connect</div>
+          <h2 class="section-title">Get In Touch for <span>OJT Opportunities</span></h2>
+          <p class="section-subtitle">
+            Looking for a dedicated, quick-learning intern for your engineering or IT team? Feel free to reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>
+              I am available for interviews and prompt technical assessments. Let's discuss how I can contribute to your upcoming company initiatives.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="method-details">
+                  <span>Email Address</span>
+                  <!-- Update this email with your actual address -->
+                  <a href="mailto:princejohnbundalan1@gmail.com">princejohnbundalan1@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="method-details">
+                  <span>Phone / Mobile</span>
+                  <!-- Update this phone number with your actual contact -->
+                  <p>+63 (9XX) XXX-XXXX</p>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-details">
+                  <span>Location</span>
+                  <p>Philippines (Open to Remote / On-site / Hybrid)</p>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="method-details">
+                  <span>Practicum Hours</span>
+                  <p>500 Hours (Ready for immediate deployment)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="https://github.com/princejohnbundalan1-debug" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:princejohnbundalan1@gmail.com" class="social-btn" title="Direct Email">
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Send a Message</h3>
+            <form id="contact-form" autocomplete="off">
+              <div class="form-group">
+                <label for="name">Your Name / Company Representative *</label>
+                <input type="text" id="name" class="form-control" placeholder="e.g. Maria Santos (Tech Recruiter)" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" class="form-control" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" class="form-control" placeholder="OJT / Internship Interview Invitation" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" class="form-control" placeholder="Tell me about the role, location setup, or your company requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+              </button>
+
+              <div class="toast-msg" id="form-toast">
+                <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been received. I will respond to your email promptly.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#ojt">OJT Training</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2026 <strong>Prince John Bundalan</strong>. All rights reserved. 4th-Year On-The-Job Training Portfolio.
+      </p>
+
+      <div class="color-hint-banner">
+        <i class="fa-solid fa-brush"></i> <strong>Color Customization:</strong> Change <code>--primary-color</code> in <code>css/style.css</code> (e.g. <code>#2a9d8f</code> for teal, <code>#e63946</code> for red).
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

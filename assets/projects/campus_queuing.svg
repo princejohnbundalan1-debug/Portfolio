@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191728"/>
+      <stop offset="100%" stop-color="#0f0c1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="12" fill="url(#bgGrad3)"/>
+  <rect x="25" y="25" width="550" height="40" rx="8" fill="#241e3d"/>
+  <circle cx="50" cy="45" r="6" fill="#ef4444"/>
+  <circle cx="70" cy="45" r="6" fill="#f59e0b"/>
+  <circle cx="90" cy="45" r="6" fill="#10b981"/>
+  <text x="120" y="49" fill="#c4b5fd" font-family="sans-serif" font-size="13">Smart Campus Registrar Queuing &amp; Ticket System</text>
+  
+  <rect x="50" y="90" width="220" height="235" rx="10" fill="#1c1630" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="70" y="125" fill="#a78bfa" font-family="sans-serif" font-size="14" font-weight="bold">NOW SERVING</text>
+  <rect x="70" y="145" width="180" height="75" rx="8" fill="#2d224d"/>
+  <text x="115" y="195" fill="#ffffff" font-family="sans-serif" font-size="36" font-weight="bold">A-142</text>
+  <text x="70" y="245" fill="#94a3b8" font-family="sans-serif" font-size="12">Counter 3: Window Clearance</text>
+  <rect x="70" y="270" width="180" height="32" rx="6" fill="#7c3aed"/>
+  <text x="110" y="291" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">Call Next Ticket</text>
+
+  <rect x="300" y="90" width="250" height="235" rx="10" fill="#171226"/>
+  <text x="320" y="125" fill="#e2e8f0" font-family="sans-serif" font-size="15" font-weight="bold">Waiting Queue (SMS Alert)</text>
+  
+  <rect x="320" y="145" width="210" height="40" rx="6" fill="#201a35"/>
+  <text x="335" y="170" fill="#f8fafc" font-family="sans-serif" font-size="13">Ticket #A-143 (Student 2021-002)</text>
+
+  <rect x="320" y="195" width="210" height="40" rx="6" fill="#201a35"/>
+  <text x="335" y="220" fill="#f8fafc" font-family="sans-serif" font-size="13">Ticket #A-144 (Student 2022-108)</text>
+
+  <rect x="320" y="245" width="210" height="40" rx="6" fill="#201a35"/>
+  <text x="335" y="270" fill="#f8fafc" font-family="sans-serif" font-size="13">Ticket #B-089 (Dean's Office)</text>
+</svg>
