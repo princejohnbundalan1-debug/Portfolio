@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: prince-portfolio
+    runtime: static
+    branch: main
+    buildCommand: ""
+    staticPublishPath: .
